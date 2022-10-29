@@ -2,7 +2,9 @@
 # Linux x64
 FROM alpine
 
-LABEL maintainer="issam.mejri@yahoo.fr"
+LABEL maintainer="issam.mejri@yahoo.fr" \
+      application-type="NodeJs" \
+      creation-date="29/10/2022"
 
 # Install Node and NPM
 RUN apk add --update nodejs nodejs-npm
